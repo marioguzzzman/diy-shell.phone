@@ -118,6 +118,19 @@ must be on **the same Wi-Fi as the shell**. Then open:
 
 The control page shows the shell's name at the top.
 
+<p align="center">
+  <img src="../images/22-control-page.png" width="300" alt="The Shellphone control page: volume slider, PLAY button, ROOM button, sound-filter menu, stream menu and POWER OFF">
+</p>
+
+| Control | What it does |
+|---|---|
+| **Volume slider** (the big bar) | Drag up or down. The number is the volume, from 0 to 100. The shell remembers it, also after a restart. |
+| **PLAY / STOP** | Tap to mute or unmute. The stream keeps running in the background, so the sound comes back instantly. |
+| **ROOM** | Switches the sound filter on (**ROOM ON**) or off. |
+| **Sound-filter menu** (`small-speaker`) | Chooses the filter that ROOM uses. For a transducer glued in a shell, try **`shell-resonator`**; **`flat`** means no filter. Listen and keep what sounds best. |
+| **STREAM** | Chooses which stream the shell plays. The choice is saved on the SD card. |
+| **POWER OFF** | Shuts the shell down safely, on the first tap. To switch it on again, unplug the power supply and plug it back in. |
+
 **If the `.local` address doesn't open:**
 
 - This is common on **Android** phones, and on computers with a **VPN**
