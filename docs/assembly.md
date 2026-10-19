@@ -15,7 +15,7 @@ When it's built, continue with **[Wi-Fi setup](wifi-setup.md)**.
 - 2×20 female socket (for the Pi) and 1×7 female socket (for the amplifier)
 - MAX98357A amplifier, with a 7-pin male header and a 2-pin screw terminal
 - 2 × 470 Ω resistors
-- 2 × 5 mm LEDs (the snail's eyes)
+- 2 × 5 mm LEDs (the snail's antennas)
 - Bone-conduction transducer, speaker cable with a white 2-pin plug
 - 5 V micro-USB power supply
 
@@ -80,11 +80,11 @@ pointing up on the side with the chips.
    Resistors have no direction, so either way round is fine.
 2. Solder them on the bottom side and cut off the extra legs.
 
-## Step 5: Solder the LEDs (the eyes)
+## Step 5: Solder the LEDs (the antennas)
 
 ![The two LEDs](../images/08-leds.jpg)
 
-![LEDs soldered as the snail's eyes](../images/09-leds-soldered.jpg)
+![LEDs soldered as the snail's antennas](../images/09-leds-soldered.jpg)
 
 LEDs **only work one way round**:
 
@@ -92,10 +92,10 @@ LEDs **only work one way round**:
 - The **short leg (−)** goes into the **square** hole. The flat edge on the
   LED's rim is on this side too.
 
-1. Push both LEDs into the two eye positions on the **top** side.
+1. Push both LEDs into the two antenna positions at the snail's head, on the **top** side.
 2. Solder them on the bottom side and cut off the extra legs.
 
-The eyes are wired straight to the power, so they light up whenever the
+The antennas are wired straight to the power, so they light up whenever the
 Shellphone is switched on.
 
 ## Step 6: Prepare the amplifier
@@ -163,7 +163,7 @@ and the shell becomes the speaker.
 
 1. Plug the 5 V power supply into the Pi's micro-USB port marked **PWR IN**:
    the port at the corner of the Pi, not the one in the middle.
-2. The snail's eyes light up straight away.
+2. The snail's antennas light up straight away.
 3. **Wait about 2 minutes.** The Pi starts up, joins the Wi-Fi and starts
    playing. Hold the shell to your ear.
 
@@ -176,7 +176,7 @@ Go to **[Wi-Fi setup](wifi-setup.md)**.
 
 | What you see | What to check |
 |---|---|
-| Eyes don't light up | Power supply plugged into **PWR IN**? Board pushed fully onto the Pi? LEDs the right way round (long leg in the round hole)? |
-| Eyes light up, but no sound after 3 minutes | Wi-Fi: see [Wi-Fi setup](wifi-setup.md). |
+| Antennas don't light up | Power supply plugged into **PWR IN**? Board pushed fully onto the Pi? LEDs the right way round (long leg in the round hole)? |
+| Antennas light up, but no sound after 3 minutes | Wi-Fi: see [Wi-Fi setup](wifi-setup.md). |
 | Connected to Wi-Fi, but no sound | Amplifier plugged in the right way round (pin names matching)? Speaker cable tight in the screw terminal? White plug pushed into the transducer? |
 | Sound is very quiet | Is the transducer glued flat against the shell? Turn up the volume on the [control page](wifi-setup.md#volume-and-control-page). |

@@ -24,7 +24,7 @@ The project emerges from the simple, almost childlike gesture of holding a shell
 The Shellphone is three parts, hidden inside a shell:
 
 1. **Raspberry Pi Zero W or Zero 2 W** - a tiny WiFi computer. It connects to the internet and plays the live [stream](https://shetells.stream/stream.html) from [shetells.stream](https://shetells.stream/).
-2. **Custom audio board** - a small PCB that plugs onto the Pi like a "HAT". It carries a **MAX98357A I2S amplifier** that turns the Pi's digital audio into a real signal, plus two LED "eyes" that light up whenever the Shellphone has power. The board is shaped like a snail.
+2. **Custom audio board** - a small PCB that plugs onto the Pi like a "HAT". It carries a **MAX98357A I2S amplifier** that turns the Pi's digital audio into a real signal, plus two LED "antennas" that light up whenever the Shellphone has power. The board is shaped like a snail.
 3. **Bone-conduction transducer** (8 Ω, 1 W) - instead of a normal speaker, a small transducer that makes whatever it touches vibrate. Glued inside the shell, it turns *the shell itself* into the speaker, so the sound seems to rise out of the shell in your hand.
 
 Any shell works: a real seashell or the 3D-printable one in [`enclosure/`](enclosure/). Everything is powered over USB (5 V).
@@ -44,7 +44,7 @@ The audio board connects to the Pi's audio pins like this:
 | Power (Vin) | 5V (pin 2) |
 | Ground (GND) | GND (pin 6) |
 
-The two LED eyes are wired from 5 V through a 470 Ω resistor each to GND, so they are always on when the board has power (they are not controlled by the Pi).
+The two LED antennas are wired from 5 V through a 470 Ω resistor each to GND, so they are always on when the board has power (they are not controlled by the Pi).
 
 *(Full board design: [`hardware/pcb/`](hardware/pcb/), a KiCad project.)*
 

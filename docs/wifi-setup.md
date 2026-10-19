@@ -21,7 +21,7 @@ list.
 
 ## Switching it on
 
-Plug in the power supply. The eyes light up straight away, but the Pi needs
+Plug in the power supply. The antennas light up straight away, but the Pi needs
 **about 2 minutes** to start, join the Wi-Fi and start playing. Be patient
 before you decide something is wrong.
 

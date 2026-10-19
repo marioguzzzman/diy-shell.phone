@@ -11,7 +11,7 @@ Everything you need to build **one** Shellphone.
 | 5 | 2-pin screw terminal, 3.5 mm pitch | 1 | Soldered onto the amp's **+** / **−** output (often included with the amp) |
 | 6 | Bone-conduction transducer, with wires | 1 | **8 Ω, 1 W** — vibrates the shell to make sound |
 | 7 | Speaker cable with a 2-pin plug | 1 | From the amp's screw terminal to the transducer |
-| 8 | 5 mm LEDs | 2 | The snail's "eyes" (any color) |
+| 8 | 5 mm LEDs | 2 | The snail's "antennas" (any color) |
 | 9 | Resistor, 470 Ω | 2 | One per LED |
 | 10 | 2×20 male pin header, 2.54 mm | 1 | Soldered to the Raspberry Pi (skip if your Pi already has one) |
 | 11 | 2×20 female socket, 2.54 mm | 1 | On the audio board, plugs onto the Pi |

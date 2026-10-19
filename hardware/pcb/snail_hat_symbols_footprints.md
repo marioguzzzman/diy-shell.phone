@@ -42,7 +42,7 @@ Hard to hand-solder; stick with the breakout.)*
 
 ---
 
-## 3. LEDs (the two snail eyes) — using 5 mm assortment
+## 3. LEDs (the snail's two antennas) — using 5 mm assortment
 
 | | KiCad library:name |
 |---|---|
@@ -94,8 +94,8 @@ stay unconnected on the breakout.)*
 
 **Speaker** → the amp's + and − output pads (4–8 Ω speaker).
 
-**LEDs (snail eyes):** as built, each LED is wired **5 V (Vin) → 470 Ω → LED anode**, cathode → GND.
-The eyes are always on when the board has power; they are **not** on a GPIO, so the Pi can't switch them.
+**LEDs (snail antennas):** as built, each LED is wired **5 V (Vin) → 470 Ω → LED anode**, cathode → GND.
+The antennas are always on when the board has power; they are **not** on a GPIO, so the Pi can't switch them.
 On the LED footprint the **square pad is the cathode (−)**. (To make them switchable later, route each
 resistor to a free GPIO instead, e.g. GPIO17 = pin 11, GPIO27 = pin 13.)
 
