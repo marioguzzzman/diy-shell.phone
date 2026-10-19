@@ -49,10 +49,8 @@ Hard to hand-solder; stick with the breakout.)*
 | **Symbol** | `Device:LED` |
 | **Footprint (THT 5 mm)** | `LED_THT:LED_D5.0mm` ← using this |
 
-**Brightness note (assorted colors):** 470 Ω on a 3.3 V GPIO gives ~2.8 mA —
-great for **red / yellow / orange / green**. **Blue and white** LEDs have a forward
-voltage near 3.3 V, so they'll be dim. For bright blue/white eyes, drop to ~150–220 Ω
-for those, or drive from 5 V through a small transistor.
+**Brightness note:** on the finished board each LED runs from **5 V** through 470 Ω
+(about 6 mA for a yellow LED), so any color is bright enough.
 
 ---
 
@@ -96,8 +94,10 @@ stay unconnected on the breakout.)*
 
 **Speaker** → the amp's + and − output pads (4–8 Ω speaker).
 
-**LEDs (snail eyes):** each LED anode → a free GPIO (e.g. GPIO17 = pin 11, GPIO27 = pin 13)
-through its resistor; cathode → GND.
+**LEDs (snail eyes):** as built, each LED is wired **5 V (Vin) → 470 Ω → LED anode**, cathode → GND.
+The eyes are always on when the board has power; they are **not** on a GPIO, so the Pi can't switch them.
+On the LED footprint the **square pad is the cathode (−)**. (To make them switchable later, route each
+resistor to a free GPIO instead, e.g. GPIO17 = pin 11, GPIO27 = pin 13.)
 
 ---
 
