@@ -46,7 +46,7 @@ The audio board connects to the Pi's audio pins like this:
 
 The two LED antennas are wired from 5 V through a 470 Ω resistor each to GND, so they are always on when the board has power (they are not controlled by the Pi).
 
-*(Full board design: [`hardware/pcb/`](hardware/pcb/), a KiCad project.)*
+*(Full board design: [`hardware/pcb/`](https://github.com/marioguzzzman/dyi-shell.phone/tree/main/hardware/pcb), a KiCad project.)*
 
 ---
 
@@ -56,10 +56,10 @@ The two LED antennas are wired from 5 V through a 470 Ω resistor each to GND, s
 |---|---|---|
 | [`docs/assembly.md`](docs/assembly.md) | Step-by-step assembly guide with photos | ✅ |
 | [`docs/wifi-setup.md`](docs/wifi-setup.md) | Connecting the Shellphone to Wi-Fi | ✅ |
-| [`hardware/pcb/`](hardware/pcb/) | KiCad design files for the audio board | ✅ Designed |
+| [`hardware/pcb/`](https://github.com/marioguzzzman/dyi-shell.phone/tree/main/hardware/pcb) | KiCad design files for the audio board | ✅ Designed |
 | [`hardware/bom.md`](hardware/bom.md) | Bill of Materials - the full parts list | ✅ |
 | [`enclosure/`](enclosure/) | 3D-printable shell (`.3mf`, `.obj`), optional | ✅ Included |
-| [`images/`](images/) | Build photos and board renders | ✅ |
+| [`images/`](https://github.com/marioguzzzman/dyi-shell.phone/tree/main/images) | Build photos and board renders | ✅ |
 | **Software** | Comes pre-installed on the kit's SD card | 🚧 Instructions for flashing your own card coming |
 
 ---
@@ -67,7 +67,7 @@ The two LED antennas are wired from 5 V through a 470 Ω resistor each to GND, s
 ## Build your own
 
 1. **Get the parts** - see the [Bill of Materials](hardware/bom.md).
-2. **Make the audio board** - open the KiCad project in [`hardware/pcb/`](hardware/pcb/), export the Gerber files, and send them to any PCB fab (e.g. JLCPCB, PCBWay).
+2. **Make the audio board** - open the KiCad project in [`hardware/pcb/`](https://github.com/marioguzzzman/dyi-shell.phone/tree/main/hardware/pcb), export the Gerber files, and send them to any PCB fab (e.g. JLCPCB, PCBWay).
 3. **Find a shell** - any shell works, or print the model in [`enclosure/`](enclosure/).
 4. **Assemble** - follow the **[Assembly guide](docs/assembly.md)**: solder the board, plug it onto the Pi, and hot-glue the bone-conduction transducer inside the shell.
 5. **Connect it to Wi-Fi** - see **[Wi-Fi setup](docs/wifi-setup.md)**.
