@@ -12,7 +12,7 @@
 </head>
 <body class="{% if page.url == '/' %}page-home{% else %}page-doc{% endif %}">
   <header class="header">
-    <a class="brand" href="{{ '/' | relative_url }}">
+    <a class="brand" href="https://shetells.stream/">
       <span class="brand-title">she tells</span>
       <span class="brand-sub">
         <svg class="brand-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.87 5.06" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75" d="M.91,3.32c3.46.66,15.77,1.65,22.92.28,4.78-.91,15.54-2.85,19.76-2.83,3.81.02,8.93,0,11.38.86"/></svg>
@@ -20,10 +20,11 @@
       </span>
     </a>
     <nav class="nav-buttons">
+      <a class="btn btn-outline{% if page.url == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}">diy guide</a>
       <a class="btn btn-outline{% if page.url contains 'assembly' %} is-active{% endif %}" href="{{ '/docs/assembly.html' | relative_url }}">assembly</a>
       <a class="btn btn-outline{% if page.url contains 'wifi' %} is-active{% endif %}" href="{{ '/docs/wifi-setup.html' | relative_url }}">wi-fi setup</a>
       <a class="btn btn-outline{% if page.url contains 'bom' %} is-active{% endif %}" href="{{ '/hardware/bom.html' | relative_url }}">parts</a>
-      <a class="btn btn-filled" href="https://shetells.stream/">she tells ↗</a>
+      <a class="btn btn-filled" href="https://github.com/marioguzzzman/diy-shell.phone">view on github ↗</a>
     </nav>
   </header>
 
@@ -38,13 +39,30 @@
 {{ content }}
   </main>
 
+  <!-- Footer: the same "add your voice" card and funders block as shetells.stream/diytoolkit.html -->
   <footer class="footer">
-    <img class="footer-spiral" src="{{ '/assets/drawings/spiral.svg' | relative_url }}" alt="" aria-hidden="true">
-    <p class="footer-tag">— made in esposende, with the water.</p>
-    <p class="footer-links">
-      <a class="btn btn-outline" href="https://github.com/marioguzzzman/diy-shell.phone">view on github</a>
-      <a class="btn btn-filled" href="https://shetells.stream/">she tells ↗</a>
-    </p>
+    <section class="voice">
+      <h2>add your voice</h2>
+      <p>Share a water memory, or a speculative future for Esposende. Your voice joins the eternal stream.</p>
+      <div class="voice-btns">
+        <a class="voice-btn" href="https://shetells.stream/game.html">play the game</a>
+        <a class="voice-btn ghost" href="https://shetells.stream/stream.html">listen to the stream</a>
+        <a class="voice-btn ghost" href="https://shetells.stream/living-archive.html">explore the living archive</a>
+      </div>
+      <p class="small">Your voice will be public. It will never be used to train AI.</p>
+    </section>
+
+    <aside class="funders">
+      <div class="funders-label">funded by</div>
+      <div class="funders-row">
+        <img class="eu" src="{{ '/assets/img/logos/eu-cofunded.png' | relative_url }}" alt="Co-funded by the European Union">
+        <img class="sta" src="{{ '/assets/img/logos/starts-aquamotion.png' | relative_url }}" alt="S+T+ARTS Aqua Motion">
+      </div>
+      <p class="funders-note">The project is realised within the framework of the <a href="https://starts.eu/what-we-do/residences/startsaquamotion/" target="_blank" rel="noopener">S+T+ARTS Aqua Motion</a> artistic residency program, an initiative co-funded by the European Commission and hosted by <a href="https://rioneiva.com/" target="_blank" rel="noopener">Rio Neiva</a>, Esposende, Portugal.</p>
+      <p class="funders-legal">S+T+ARTS AQUA MOTION is co-funded by the European Union under the S+T+ARTS &mdash; Science, Technology and Arts initiative of DG CNECT (GA no. LC-03568055). Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or DG CNECT. Neither the European Union nor the granting authority can be held responsible for them.</p>
+      <div class="funders-label">residency host</div>
+      <img class="rio" src="{{ '/assets/img/logos/rio-neiva.png' | relative_url }}" alt="Rio Neiva">
+    </aside>
   </footer>
 </body>
 </html>
