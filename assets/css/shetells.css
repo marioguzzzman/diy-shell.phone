@@ -143,7 +143,11 @@ hr + h2 { margin-top: 0.6em; }
 
 img { max-width: 100%; height: auto; }
 .content img { border-radius: 14px; display: block; margin: 1.2em auto; }
-.content p[align="center"] img { display: inline-block; margin: 0.5em 0.5%; }
+/* centred image rows (<p align="center"> in the Markdown): side by side, evenly spaced */
+.content p[align="center"] { display: flex; flex-wrap: wrap; justify-content: center; gap: 2%; margin: 1.2em 0; }
+.content p[align="center"] img { display: block; margin: 0; }
+/* rows of three photos (width="32%" in the Markdown): same shape, so the row lines up */
+.content p[align="center"] img[width="32%"] { width: 32%; aspect-ratio: 4 / 3; object-fit: cover; }
 
 /* notes / tips */
 blockquote {
@@ -240,4 +244,5 @@ pre code { background: none; padding: 0; }
   .nav-buttons { justify-content: flex-start; width: 100%; }
   .brand { flex-wrap: wrap; }
   .btn { padding: 0.5rem 1.1rem; }
+  .content p[align="center"] img[width="32%"] { width: 100%; margin: 0.4em 0; }
 }

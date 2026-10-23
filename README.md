@@ -1,11 +1,17 @@
 # 🐚 DIY Shell Phone
 
-This repository is the open-source reference for the *DIY Shell Phone*, so anyone can build their own, part of **[She Tells, Sea Shells](https://shetells.stream/)**, an artistic research project, developing both an artwork, an installation of the Shetells artwork, and a toolkit. 
+This repository is the open-source reference for the *DIY Shell Phone*, so anyone can build their own.
 
-The project emerges from the simple, almost childlike gesture of holding a shell to the ear, hearing the ocean’s presence. This toolkit is conceived as a means for the waters of Esposende to exchange with their inhabitants, enabling acts of observation, remembrance, and speculation about the futures of water bodies. Through this, a playful voice is extended to the non-human presences and aquatic landscapes of the ecosystem.
+The DIY Shell Phone is the toolkit of **[Sea Shells, She Tells](https://shetells.stream/)**, an artistic research project in Esposende. It begins with the simple, almost childlike gesture of holding a shell to the ear and hearing the ocean. Through field recordings, performed voices, local stories and speculative futures, we extend a playful voice to the waters of Esposende, and invite the people who live alongside them to answer.
 
 
 ![The Shellphone](images/hero_image_shellphone.png)
+
+<p align="center">
+  <img src="images/kit-assembled-with-shell.jpg" width="32%" alt="The assembled kit connected to a large shell, on the toolkit card">
+  <img src="images/kit-board-and-shell.jpg" width="32%" alt="The snail board on the Raspberry Pi, next to the shell">
+  <img src="images/kit-board-in-box.jpg" width="32%" alt="The snail board in its box of green paper">
+</p>
 
 > **Building a kit?** Start with the **[Assembly guide](docs/assembly.md)**, then the **[Wi-Fi setup](docs/wifi-setup.md)**.
 
@@ -66,6 +72,12 @@ The two LED antennas are wired from 5 V through a 470 Ω resistor each to GND, s
 
 ## Build your own
 
+<p align="center">
+  <img src="images/kit-box-and-card.jpg" width="32%" alt="The kit in its box with the instruction card">
+  <img src="images/kit-card-and-postcard.jpg" width="32%" alt="The toolkit card, a postcard and the assembled kit">
+  <img src="images/kit-back-stay-salty.jpg" width="32%" alt="The back of the board, STAY SALTY, on the Raspberry Pi next to the shell">
+</p>
+
 1. **Get the parts** - see the [Bill of Materials](hardware/bom.md).
 2. **Make the audio board** - open the KiCad project in [`hardware/pcb/`](https://github.com/marioguzzzman/diy-shell.phone/tree/main/hardware/pcb), export the Gerber files, and send them to any PCB fab (e.g. JLCPCB, PCBWay).
 3. **Find a shell** - any shell works, or print the model in [`enclosure/`](enclosure/).
@@ -88,3 +100,5 @@ Made by:
 - **Rita Eperjesi** - [rita.cloud](https://rita.cloud/)
 - **Mario Guzman** - [mario-guzman.com](https://www.mario-guzman.com/)
 - **Christian Kokott** - [kokott.art](https://kokott.art/)
+
+Co-funded by the European Union within the [S+T+ARTS Aqua Motion](https://starts.eu/what-we-do/residences/startsaquamotion/) residency, hosted by [Rio Neiva](https://rioneiva.com/), Esposende.
