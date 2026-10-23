@@ -64,5 +64,21 @@
       <img class="rio" src="{{ '/assets/img/logos/rio-neiva.png' | relative_url }}" alt="Rio Neiva">
     </aside>
   </footer>
+  <!-- Click a photo to see it large; click again or press Esc to close. -->
+  <div class="zoom" id="zoom" hidden><img alt=""></div>
+  <script>
+    (function () {
+      var zoom = document.getElementById('zoom'), big = zoom.querySelector('img');
+      function close() { zoom.hidden = true; big.removeAttribute('src'); document.body.classList.remove('zoom-open'); }
+      document.querySelectorAll('.content img').forEach(function (img) {
+        img.addEventListener('click', function () {
+          big.src = img.currentSrc || img.src; big.alt = img.alt;
+          zoom.hidden = false; document.body.classList.add('zoom-open');
+        });
+      });
+      zoom.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !zoom.hidden) close(); });
+    })();
+  </script>
 </body>
 </html>
