@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ '/images/hero_image_shellphone.png' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/shetells.css' | relative_url }}">
+</head>
+<body class="{% if page.url == '/' %}page-home{% else %}page-doc{% endif %}">
+  <header class="header">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-title">she tells</span>
+      <span class="brand-sub">
+        <svg class="brand-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.87 5.06" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75" d="M.91,3.32c3.46.66,15.77,1.65,22.92.28,4.78-.91,15.54-2.85,19.76-2.83,3.81.02,8.93,0,11.38.86"/></svg>
+        diy shell phone
+      </span>
+    </a>
+    <nav class="nav-buttons">
+      <a class="btn btn-outline{% if page.url contains 'assembly' %} is-active{% endif %}" href="{{ '/docs/assembly.html' | relative_url }}">assembly</a>
+      <a class="btn btn-outline{% if page.url contains 'wifi' %} is-active{% endif %}" href="{{ '/docs/wifi-setup.html' | relative_url }}">wi-fi setup</a>
+      <a class="btn btn-outline{% if page.url contains 'bom' %} is-active{% endif %}" href="{{ '/hardware/bom.html' | relative_url }}">parts</a>
+      <a class="btn btn-filled" href="https://shetells.stream/">she tells ↗</a>
+    </nav>
+  </header>
+
+  {% if page.url == '/' %}
+  <img class="doodle doodle-blimp" src="{{ '/assets/drawings/blimp.svg' | relative_url }}" alt="" aria-hidden="true">
+  <img class="doodle doodle-seaweed" src="{{ '/assets/drawings/seaweed.svg' | relative_url }}" alt="" aria-hidden="true">
+  {% else %}
+  <img class="doodle doodle-shell" src="{{ '/assets/drawings/shell.svg' | relative_url }}" alt="" aria-hidden="true">
+  {% endif %}
+
+  <main class="content">
+{{ content }}
+  </main>
+
+  <footer class="footer">
+    <img class="footer-spiral" src="{{ '/assets/drawings/spiral.svg' | relative_url }}" alt="" aria-hidden="true">
+    <p class="footer-tag">— made in esposende, with the water.</p>
+    <p class="footer-links">
+      <a class="btn btn-outline" href="https://github.com/marioguzzzman/dyi-shell.phone">view on github</a>
+      <a class="btn btn-filled" href="https://shetells.stream/">she tells ↗</a>
+    </p>
+  </footer>
+</body>
+</html>
